@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top:auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  color:#2b083b;
+  background-color: rgba(240, 234, 245, 0.99); /* for addiing some transparency to the background */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+nav {
+  background-color: #7f5891;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+  float: center;
+  margin: 0 10px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 11px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0.5
+}
+
+/*hovering on the navigation bar*/
+a:hover {
+  background-color: hsl(274, 93%, 73%);
+  transition: background-color 0.3s;
+}
+
+/* Footer */
+footer {
+  background-color: #7f5891;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: bottom;
+  bottom: 0;
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+body {
+  text-align: center; 
+  line-height: 1.5;
+  color: rgb(24, 3, 36);
+  background-color: rgb(235, 228, 236);
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  color: rgb(57, 20, 75);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20pt;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 16px;
+}
+ul {
+  list-style-type: style type;
+  padding: 1;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50%) translateY(-50%); 
+}
+
+header, nav, .image-container, section, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* mobile phone screen */
+@media only screen and (max-width: 600px) { 
+  nav a { /* for the navigation bar */
+    padding: 10px 8px;
+  }
+
+  a { /* for the buttons */
+    padding: 0.3em 0.6em;
+  }
+
+  h2 { /* for the heading */
+    font-size: 16pt;
+  }
+
+  ul { /* for the list */
+    padding: 0;
+  }
+
+  img { /* for the images */
+    width: 100%;
+  }
+
+  section { /* for the sections */
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* laptop screen */
+@media only screen and (min-width: 601px) { 
+  img { /* for the images */
+    width: 50%;
+    height: auto;
+  }
+
+  section { /* for the sections */
+    width: 75%;
+    margin: 0 auto;
+  }
+}
